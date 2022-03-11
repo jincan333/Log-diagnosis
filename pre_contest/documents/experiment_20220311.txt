@@ -1,0 +1,41 @@
+整理标签数据word_label_df
+
+# xgb参数
+params = {
+    'booster':'gbtree',
+    'objective':'multi:softmax',   # 多分类问题
+    'num_class':4,  # 类别数，与multi softmax并用
+    'gamma':0.1,    # 用于控制是否后剪枝的参数，越大越保守，一般0.1 0.2的样子
+    'max_depth':6,  # 构建树的深度，越大越容易过拟合
+    'lambda':2,  # 控制模型复杂度的权重值的L2 正则化项参数，参数越大，模型越不容易过拟合
+    'subsample':1, # 随机采样训练样本
+    'colsample_bytree':1,# 这个参数默认为1，是每个叶子里面h的和至少是多少
+    # 对于正负样本不均衡时的0-1分类而言，假设h在0.01附近，min_child_weight为1
+    #意味着叶子节点中最少需要包含100个样本。这个参数非常影响结果，
+    # 控制叶子节点中二阶导的和的最小值，该参数值越小，越容易过拟合
+    'silent':0,  # 设置成1 则没有运行信息输入，最好是设置成0
+    'eta':0.05,  # 如同学习率
+    'seed':1000,
+    'nthread':12,  #CPU线程数
+    #'eval_metric':'auc'
+}
+num_boost_round=500
+
+doc2vec模型+xgb：random.seed(0)
+dm=0,vector_size = 100, window = 2, min_count = 1, epochs = 100,workers=12   macro_f1:0.3872
+dm=0,vector_size = 200, window = 2, min_count = 1, epochs = 100,workers=12   macro_f1:0.3946
+dm=0,vector_size = 300, window = 2, min_count = 1, epochs = 100,workers=12   macro_f1:0.3854
+dm=1,vector_size = 100, window = 2, min_count = 1, epochs = 100,workers=12   macro_f1:0.3646
+dm=1,vector_size = 200, window = 2, min_count = 1, epochs = 100,workers=12   macro_f1:0.3813
+dm=1,vector_size = 300, window = 2, min_count = 1, epochs = 100,workers=12   macro_f1:0.3713
+
+word2vec模型+xgb：random.seed(0)
+vector_size=100, alpha=0.03, window=5, min_count=1,max_vocab_size=None, sample=1e-3, seed=0, workers=12, min_alpha=0.0001,sg=0, hs=0, negative=5, cbow_mean=1, hashfxn=hash, epochs=10, null_word=0,trim_rule=None, sorted_vocab=1   macro_f1:0.4509
+
+vector_size=100, alpha=0.03, window=10, min_count=1,max_vocab_size=None, sample=1e-3, seed=0, workers=12, min_alpha=0.0001,sg=1, hs=0, negative=5, cbow_mean=1, hashfxn=hash, epochs=10, null_word=0,trim_rule=None, sorted_vocab=1   macro_f1:0.4510
+
+
+近期计划：
+1、多做一下数据分析，不同标签的关键词分析和提取、标签0的分析
+2、确定一下baseline，出一个初步成绩
+3、思考一下doc2vec和word2vec的建模方式，尝试不同的方式分词和构建词向量，比较一下建模效果

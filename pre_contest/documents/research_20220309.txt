@@ -1,0 +1,4 @@
+doc2vec介绍 https://zhuanlan.zhihu.com/p/136096645
+doc2vec建模案例 https://towardsdatascience.com/multi-class-text-classification-with-doc2vec-logistic-regression-9da9947b43f4#:~:text=Doc2vec%20is%20an%20NLP%20tool,of%20scope%20of%20this%20article.
+word2vec介绍 https://blog.csdn.net/xsdxs/article/details/72951545
+word2vec参数介绍 https://blog.csdn.net/laobai1015/article/details/86540813   https://blog.csdn.net/HHTNAN/article/details/78750270
