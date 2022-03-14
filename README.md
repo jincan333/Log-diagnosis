@@ -2,35 +2,22 @@
 背景： 第三届阿里云磐久智维算法大赛，比赛说明和计划
 
 比赛详情链接：https://tianchi.aliyun.com/competition/entrance/531947/information
+git仓库链接：https://github.com/jincan333/Log-diagnosis
 
 
 
 计划：
 
-0302-0304：比赛准备
-
-0305-0306：数据分析和特征工程
-
-0307-0311：确定初版模型
-
-0312：提交初版模型结果
-
-0313：初版模型badcase分析和优化
+20220314-20220320：
+1. baseline模型优化，更好的词汇提取方式
+2. 0和1标签的数据分析和数据挖掘，相关结果可以用于尝试组合模型
+3. word2vec模型优化（金灿）
+4. 时间序列和nlp相关技术调研
+5. 更精准的匹配日志和标签
 
 
 
 版本迭代：
 
-V0P1：20220304 baseline_embedding 效果：
+V1：20220313 v1_baseline.ipynb 成绩：146 /0.5961
 
-
-
-初赛数据：
-
-Table 1: SEL日志数据, 数据文件名: preliminary_sel_log_dataset.csv
-
-Table 2: 训练标签数据, 数据文件名: preliminary_train_label_dataset.csv, preliminary_train_label_dataset_s.csv
-
-Table 3: 选手提交数据, 数据文件名: preliminary_submit_dataset_a.csv, 对应的log文件名：preliminary_sel_log_dataset_a.csv
-
-Table 4: SEL日志语料数据, 数据文件名: additional_sel_log_dataset.csv
