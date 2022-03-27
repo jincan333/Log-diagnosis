@@ -1,0 +1,20 @@
+0326会议纪要：
+本周进展：
+1、autogluon尝试
+2、图的数据挖掘和构建
+3、新建了3个特征，效果相比第一版预计提升3pp（对应v1p4）
+
+计划：
+1、数据挖掘和badcase分析
+2、新挖掘msg分段长度、msg类型相关特征，预计提升
+3、word2vec优化和其它nlp模型尝试
+4、图模型尝试
+
+
+autogluon相关文档：
+官网   https://auto.gluon.ai/stable/tutorials/tabular_prediction/index.html
+github   https://github.com/awslabs/autogluon
+AutoGluon | 用三行代码战胜 90% 的模型   https://cloud.tencent.com/developer/article/1827841
+AutoGluon-教程1-简单的入门模型   https://blog.csdn.net/wish_to_top/article/details/117999594
+AutoGluon-教程2-提升更高精度   https://codeantenna.com/a/FhLdeNwSfa
+李沐评价亚马逊AI新开源自动机器学习项目AutoGluon   https://www.zhihu.com/question/360250836
