@@ -1,0 +1,11 @@
+2022-05-06 23:31:40,759 14736 xgb_v2_feature.py[line:270] - INFO: 开始匹配训练集日志和标签
+2022-05-06 23:31:40,759 14736 xgb_v2_feature.py[line:271] - INFO: 使用报错时间截断进行划分
+2022-05-06 23:34:00,201 14736 xgb_v2_feature.py[line:274] - INFO: 匹配训练集日志和标签结束
+2022-05-06 23:34:00,201 14736 xgb_v2_feature.py[line:282] - INFO: 开始计算统计特征
+2022-05-06 23:34:27,749 14736 xgb_v2_feature.py[line:285] - INFO: 计算统计特征结束
+2022-05-06 23:34:27,762 14736 xgb_v2_feature.py[line:299] - INFO: 开始计算词频特征
+2022-05-06 23:35:14,649 14736 xgb_v2_feature.py[line:309] - INFO: 计算词频特征结束
+2022-05-06 23:35:32,854 14736 xgb_v2_feature.py[line:333] - INFO: 特征结果保存在: ./user_data/feature_data/xgb_model_v2_2022-05-06.csv
+2022-05-06 23:40:10,994 9984 xgb_model_v2.py[line:125] - INFO: 开始训练验证集模型
+2022-05-06 23:41:41,737 9984 xgb_model_v2.py[line:127] - INFO: 训练验证集模型结束
+2022-05-06 23:41:41,793 9984 xgb_model_v2.py[line:131] - INFO: 验证集 macro_f1 为: 0.6585464408809414

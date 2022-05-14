@@ -1,0 +1,537 @@
+2022-05-09 00:00:06,361 1400 xgb_model_v2.py[line:118] - INFO: 开始训练xgb模型
+2022-05-09 00:02:15,638 1400 xgb_model_v2.py[line:120] - INFO: 训练xgb模型结束
+2022-05-09 00:02:15,879 1400 xgb_model_v2.py[line:124] - INFO: 训练集评估效果: 
+2022-05-09 00:02:15,888 1400 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:02:15,889 1400 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:02:15,891 1400 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:02:15,892 1400 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:02:15,892 1400 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9981160125433628
+
+2022-05-09 00:02:16,343 1400 xgb_model_v2.py[line:118] - INFO: 开始训练xgb模型
+2022-05-09 00:03:47,658 1400 xgb_model_v2.py[line:120] - INFO: 训练xgb模型结束
+2022-05-09 00:03:47,700 1400 xgb_model_v2.py[line:124] - INFO: 训练集评估效果: 
+2022-05-09 00:03:47,744 1400 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:03:47,745 1400 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:03:47,747 1400 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:03:47,748 1400 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:03:47,748 1400 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9984988568855998
+
+2022-05-09 00:03:48,205 1400 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:03:48,268 1400 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:03:48,279 1400 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:03:48,290 1400 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:03:48,292 1400 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:03:48,294 1400 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:03:48,295 1400 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:03:48,295 1400 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9981160125433628
+
+2022-05-09 00:03:48,552 1400 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:03:48,599 1400 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:03:48,614 1400 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:03:48,624 1400 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:03:48,625 1400 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:03:48,627 1400 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:03:48,632 1400 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:03:48,632 1400 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9982984843600997
+
+2022-05-09 00:03:48,743 1400 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:03:48,765 1400 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:03:48,771 1400 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:03:48,777 1400 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:03:48,779 1400 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  0.99, F1  0.99
+2022-05-09 00:03:48,780 1400 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:03:48,782 1400 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:03:48,782 1400 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9976798170437745
+
+2022-05-09 00:03:48,853 1400 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:03:48,872 1400 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:03:48,876 1400 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:03:48,925 1400 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.00, Recall  0.00, F1  0.00
+2022-05-09 00:03:48,926 1400 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.58, Recall  0.07, F1  0.13
+2022-05-09 00:03:48,927 1400 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.66, Recall  0.45, F1  0.53
+2022-05-09 00:03:48,929 1400 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.23, Recall  0.74, F1  0.35
+2022-05-09 00:03:48,929 1400 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.12767486728052546
+
+2022-05-09 00:03:49,000 1400 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:03:49,014 1400 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:03:49,018 1400 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:03:49,024 1400 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.60, Recall  0.02, F1  0.04
+2022-05-09 00:03:49,025 1400 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.63, Recall  0.07, F1  0.12
+2022-05-09 00:03:49,026 1400 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.68, Recall  0.46, F1  0.55
+2022-05-09 00:03:49,028 1400 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.25, Recall  0.79, F1  0.38
+2022-05-09 00:03:49,028 1400 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.14827531248609
+
+2022-05-09 00:03:49,333 1400 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:03:49,387 1400 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:03:49,397 1400 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:03:49,409 1400 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.91, Recall  0.81, F1  0.86
+2022-05-09 00:03:49,410 1400 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.91, Recall  0.94, F1  0.92
+2022-05-09 00:03:49,412 1400 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.98, Recall  0.99, F1  0.99
+2022-05-09 00:03:49,413 1400 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.97, Recall  0.97, F1  0.97
+2022-05-09 00:03:49,414 1400 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9042283250366199
+
+2022-05-09 00:03:49,626 1400 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:03:49,667 1400 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:03:49,675 1400 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:03:49,686 1400 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:03:49,688 1400 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:03:49,689 1400 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:03:49,691 1400 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:03:49,691 1400 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9984988568855998
+
+2022-05-09 00:03:49,788 1400 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:03:49,806 1400 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:03:49,811 1400 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:03:49,817 1400 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.62, Recall  0.39, F1  0.48
+2022-05-09 00:03:49,819 1400 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.73, Recall  0.79, F1  0.76
+2022-05-09 00:03:49,820 1400 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.94, Recall  0.97, F1  0.95
+2022-05-09 00:03:49,821 1400 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.90, Recall  0.91, F1  0.90
+2022-05-09 00:03:49,821 1400 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.6637126268420901
+
+2022-05-09 00:03:49,883 1400 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:03:49,896 1400 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:03:49,901 1400 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:03:49,906 1400 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.00, Recall  0.00, F1  0.00
+2022-05-09 00:03:49,908 1400 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.28, Recall  0.02, F1  0.03
+2022-05-09 00:03:49,909 1400 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.58, Recall  0.73, F1  0.65
+2022-05-09 00:03:49,910 1400 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.26, Recall  0.42, F1  0.33
+2022-05-09 00:03:49,910 1400 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.10044634827658197
+
+2022-05-09 00:03:49,968 1400 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:03:49,979 1400 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:03:49,984 1400 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:03:49,990 1400 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.83, Recall  0.04, F1  0.07
+2022-05-09 00:03:49,991 1400 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.50, Recall  0.02, F1  0.05
+2022-05-09 00:03:49,992 1400 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.58, Recall  0.73, F1  0.65
+2022-05-09 00:03:49,993 1400 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.28, Recall  0.46, F1  0.35
+2022-05-09 00:03:49,994 1400 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.13817727565139226
+
+2022-05-09 00:22:20,655 17960 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:22:20,719 17960 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:22:20,889 17960 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:22:20,898 17960 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:22:20,899 17960 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:22:20,900 17960 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:22:20,901 17960 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:22:20,901 17960 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9981160125433628
+
+2022-05-09 00:22:21,139 17960 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:22:21,185 17960 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:22:21,196 17960 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:22:21,210 17960 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:22:21,211 17960 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:22:21,213 17960 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:22:21,214 17960 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:22:21,214 17960 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9982984843600997
+
+2022-05-09 00:22:21,323 17960 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:22:21,346 17960 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:22:21,351 17960 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:22:21,358 17960 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:22:21,359 17960 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  0.99, F1  0.99
+2022-05-09 00:22:21,360 17960 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:22:21,361 17960 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:22:21,362 17960 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9976798170437745
+
+2022-05-09 00:22:21,429 17960 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:22:21,445 17960 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:22:21,449 17960 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:22:21,455 17960 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.00, Recall  0.00, F1  0.00
+2022-05-09 00:22:21,456 17960 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.58, Recall  0.07, F1  0.13
+2022-05-09 00:22:21,458 17960 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.66, Recall  0.45, F1  0.53
+2022-05-09 00:22:21,459 17960 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.23, Recall  0.74, F1  0.35
+2022-05-09 00:22:21,459 17960 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.12767486728052546
+
+2022-05-09 00:22:21,523 17960 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:22:21,539 17960 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:22:21,544 17960 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:22:21,550 17960 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.00, Recall  0.00, F1  0.00
+2022-05-09 00:22:21,551 17960 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.46, Recall  0.56, F1  0.51
+2022-05-09 00:22:21,552 17960 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.96, Recall  0.82, F1  0.88
+2022-05-09 00:22:21,553 17960 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.88, Recall  0.97, F1  0.92
+2022-05-09 00:22:21,554 17960 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.3483580215794494
+
+2022-05-09 00:29:02,288 4664 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:29:02,363 4664 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:29:02,547 4664 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:29:02,556 4664 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:29:02,557 4664 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:29:02,558 4664 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:29:02,559 4664 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:29:02,559 4664 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9981160125433628
+
+2022-05-09 00:29:02,761 4664 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:29:02,807 4664 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:29:02,815 4664 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:29:02,827 4664 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:29:02,828 4664 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:29:02,830 4664 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:29:02,831 4664 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:29:02,831 4664 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9982984843600997
+
+2022-05-09 00:29:02,934 4664 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:29:02,955 4664 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:29:02,960 4664 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:29:02,967 4664 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:29:02,968 4664 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  0.99, F1  0.99
+2022-05-09 00:29:02,969 4664 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:29:02,971 4664 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:29:02,971 4664 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9976798170437745
+
+2022-05-09 00:29:03,040 4664 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:29:03,056 4664 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:29:03,060 4664 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:29:03,067 4664 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.00, Recall  0.00, F1  0.00
+2022-05-09 00:29:03,068 4664 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.58, Recall  0.07, F1  0.13
+2022-05-09 00:29:03,069 4664 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.66, Recall  0.45, F1  0.53
+2022-05-09 00:29:03,070 4664 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.23, Recall  0.74, F1  0.35
+2022-05-09 00:29:03,070 4664 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.12767486728052546
+
+2022-05-09 00:29:03,139 4664 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:29:03,154 4664 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:29:03,158 4664 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:29:03,164 4664 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  0.01, F1  0.01
+2022-05-09 00:29:03,165 4664 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.64, Recall  0.27, F1  0.38
+2022-05-09 00:29:03,166 4664 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.68, Recall  0.55, F1  0.61
+2022-05-09 00:29:03,167 4664 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.29, Recall  0.71, F1  0.42
+2022-05-09 00:29:03,168 4664 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.23789469040606612
+
+2022-05-09 00:31:04,662 18728 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:31:04,727 18728 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:31:04,899 18728 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:31:04,908 18728 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:31:04,909 18728 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:31:04,910 18728 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:31:04,911 18728 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:31:04,911 18728 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9981160125433628
+
+2022-05-09 00:31:05,131 18728 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:31:05,177 18728 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:31:05,185 18728 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:31:05,196 18728 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:31:05,198 18728 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:31:05,199 18728 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:31:05,200 18728 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 00:31:05,201 18728 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9982984843600997
+
+2022-05-09 00:31:05,314 18728 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:31:05,336 18728 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:31:05,341 18728 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:31:05,349 18728 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:31:05,350 18728 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  0.99, F1  0.99
+2022-05-09 00:31:05,351 18728 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:31:05,352 18728 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 00:31:05,352 18728 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9976798170437745
+
+2022-05-09 00:31:05,428 18728 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:31:05,444 18728 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:31:05,448 18728 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:31:05,455 18728 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.00, Recall  0.00, F1  0.00
+2022-05-09 00:31:05,456 18728 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.58, Recall  0.07, F1  0.13
+2022-05-09 00:31:05,457 18728 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.66, Recall  0.45, F1  0.53
+2022-05-09 00:31:05,458 18728 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.23, Recall  0.74, F1  0.35
+2022-05-09 00:31:05,459 18728 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.12767486728052546
+
+2022-05-09 00:31:05,549 18728 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 00:31:05,565 18728 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 00:31:05,570 18728 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 00:31:05,579 18728 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  0.01, F1  0.01
+2022-05-09 00:31:05,584 18728 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.77, Recall  0.11, F1  0.20
+2022-05-09 00:31:05,586 18728 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.63, Recall  0.51, F1  0.57
+2022-05-09 00:31:05,587 18728 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.28, Recall  0.74, F1  0.40
+2022-05-09 00:31:05,587 18728 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.1662002928604416
+
+2022-05-09 01:01:26,089 15096 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:01:26,104 15096 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:01:26,349 15096 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:01:26,354 15096 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  0.01, F1  0.01
+2022-05-09 01:01:26,355 15096 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.77, Recall  0.11, F1  0.20
+2022-05-09 01:01:26,356 15096 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.63, Recall  0.51, F1  0.57
+2022-05-09 01:01:26,357 15096 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.28, Recall  0.74, F1  0.40
+2022-05-09 01:01:26,357 15096 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.1662002928604416
+
+2022-05-09 01:09:15,369 15096 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:09:15,383 15096 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:09:15,401 15096 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:09:15,407 15096 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.00, Recall  0.00, F1  0.00
+2022-05-09 01:09:15,409 15096 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.68, Recall  0.06, F1  0.11
+2022-05-09 01:09:15,410 15096 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.68, Recall  0.53, F1  0.60
+2022-05-09 01:09:15,412 15096 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.27, Recall  0.76, F1  0.40
+2022-05-09 01:09:15,412 15096 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.13059018804572842
+
+2022-05-09 01:15:26,262 15096 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.78, Recall  0.82, F1  0.80
+2022-05-09 01:15:26,263 15096 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.95, Recall  0.95, F1  0.95
+2022-05-09 01:15:26,264 15096 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 01:15:26,266 15096 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.99, Recall  0.98, F1  0.99
+2022-05-09 01:15:26,266 15096 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.8888422964518373
+
+2022-05-09 01:18:43,266 19880 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:18:43,331 19880 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:18:43,509 19880 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:18:43,518 19880 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.99, Recall  0.06, F1  0.11
+2022-05-09 01:18:43,519 19880 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.59, Recall  0.35, F1  0.43
+2022-05-09 01:18:43,520 19880 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.71, Recall  0.49, F1  0.58
+2022-05-09 01:18:43,521 19880 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.21, Recall  0.69, F1  0.32
+2022-05-09 01:18:43,521 19880 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.288189761932681
+
+2022-05-09 01:18:43,718 19880 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:18:43,763 19880 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:18:43,771 19880 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:18:43,782 19880 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  0.05, F1  0.10
+2022-05-09 01:18:43,784 19880 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.59, Recall  0.34, F1  0.43
+2022-05-09 01:18:43,785 19880 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.70, Recall  0.49, F1  0.58
+2022-05-09 01:18:43,787 19880 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.21, Recall  0.69, F1  0.32
+2022-05-09 01:18:43,787 19880 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.28379046148977155
+
+2022-05-09 01:18:43,900 19880 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:18:43,922 19880 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:18:43,927 19880 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:18:43,933 19880 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.97, Recall  0.06, F1  0.12
+2022-05-09 01:18:43,935 19880 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.58, Recall  0.36, F1  0.44
+2022-05-09 01:18:43,936 19880 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.71, Recall  0.49, F1  0.58
+2022-05-09 01:18:43,937 19880 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.21, Recall  0.69, F1  0.32
+2022-05-09 01:18:43,937 19880 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.2979003339327503
+
+2022-05-09 01:18:44,002 19880 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:18:44,020 19880 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:18:44,025 19880 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:18:44,031 19880 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.47, Recall  0.08, F1  0.14
+2022-05-09 01:18:44,032 19880 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.55, Recall  0.11, F1  0.18
+2022-05-09 01:18:44,034 19880 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.66, Recall  0.46, F1  0.54
+2022-05-09 01:18:44,035 19880 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.25, Recall  0.77, F1  0.38
+2022-05-09 01:18:44,035 19880 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.2113772831711782
+
+2022-05-09 01:18:44,115 19880 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:18:44,130 19880 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:18:44,134 19880 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:18:44,140 19880 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.78, Recall  0.82, F1  0.80
+2022-05-09 01:18:44,141 19880 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.95, Recall  0.95, F1  0.95
+2022-05-09 01:18:44,143 19880 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 01:18:44,144 19880 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.99, Recall  0.98, F1  0.99
+2022-05-09 01:18:44,144 19880 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.8888422964518373
+
+2022-05-09 01:20:27,430 8428 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:20:27,492 8428 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:20:27,666 8428 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:20:27,676 8428 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.99, Recall  0.06, F1  0.11
+2022-05-09 01:20:27,677 8428 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.59, Recall  0.35, F1  0.43
+2022-05-09 01:20:27,678 8428 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.71, Recall  0.49, F1  0.58
+2022-05-09 01:20:27,679 8428 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.21, Recall  0.69, F1  0.32
+2022-05-09 01:20:27,679 8428 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.288189761932681
+
+2022-05-09 01:20:27,884 8428 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:20:27,929 8428 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:20:27,937 8428 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:20:27,948 8428 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  0.05, F1  0.10
+2022-05-09 01:20:27,950 8428 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.59, Recall  0.34, F1  0.43
+2022-05-09 01:20:27,951 8428 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.70, Recall  0.49, F1  0.58
+2022-05-09 01:20:27,953 8428 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.21, Recall  0.69, F1  0.32
+2022-05-09 01:20:27,953 8428 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.28379046148977155
+
+2022-05-09 01:20:28,067 8428 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:20:28,087 8428 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:20:28,092 8428 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:20:28,099 8428 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.97, Recall  0.06, F1  0.12
+2022-05-09 01:20:28,100 8428 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.58, Recall  0.36, F1  0.44
+2022-05-09 01:20:28,102 8428 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.71, Recall  0.49, F1  0.58
+2022-05-09 01:20:28,103 8428 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.21, Recall  0.69, F1  0.32
+2022-05-09 01:20:28,103 8428 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.2979003339327503
+
+2022-05-09 01:20:28,168 8428 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:20:28,184 8428 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:20:28,189 8428 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:20:28,195 8428 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.47, Recall  0.08, F1  0.14
+2022-05-09 01:20:28,196 8428 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.55, Recall  0.11, F1  0.18
+2022-05-09 01:20:28,198 8428 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.66, Recall  0.46, F1  0.54
+2022-05-09 01:20:28,199 8428 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.25, Recall  0.77, F1  0.38
+2022-05-09 01:20:28,199 8428 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.2113772831711782
+
+2022-05-09 01:20:28,261 8428 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:20:28,277 8428 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:20:28,281 8428 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:20:28,287 8428 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.42, Recall  0.06, F1  0.10
+2022-05-09 01:20:28,288 8428 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.68, Recall  0.09, F1  0.16
+2022-05-09 01:20:28,290 8428 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.68, Recall  0.47, F1  0.55
+2022-05-09 01:20:28,291 8428 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.26, Recall  0.80, F1  0.40
+2022-05-09 01:20:28,291 8428 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.1900807429099897
+
+2022-05-09 01:21:46,208 13708 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:21:46,269 13708 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:21:46,446 13708 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:21:46,455 13708 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.99, Recall  0.06, F1  0.11
+2022-05-09 01:21:46,456 13708 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.59, Recall  0.35, F1  0.43
+2022-05-09 01:21:46,457 13708 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.71, Recall  0.49, F1  0.58
+2022-05-09 01:21:46,459 13708 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.21, Recall  0.69, F1  0.32
+2022-05-09 01:21:46,459 13708 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.288189761932681
+
+2022-05-09 01:21:46,675 13708 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:21:46,721 13708 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:21:46,729 13708 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:21:46,741 13708 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  0.05, F1  0.10
+2022-05-09 01:21:46,742 13708 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.59, Recall  0.34, F1  0.43
+2022-05-09 01:21:46,744 13708 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.70, Recall  0.49, F1  0.58
+2022-05-09 01:21:46,745 13708 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.21, Recall  0.69, F1  0.32
+2022-05-09 01:21:46,746 13708 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.28379046148977155
+
+2022-05-09 01:21:46,856 13708 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:21:46,878 13708 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:21:46,883 13708 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:21:46,890 13708 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.97, Recall  0.06, F1  0.12
+2022-05-09 01:21:46,891 13708 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.58, Recall  0.36, F1  0.44
+2022-05-09 01:21:46,893 13708 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.71, Recall  0.49, F1  0.58
+2022-05-09 01:21:46,894 13708 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.21, Recall  0.69, F1  0.32
+2022-05-09 01:21:46,894 13708 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.2979003339327503
+
+2022-05-09 01:21:46,959 13708 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:21:46,980 13708 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:21:46,985 13708 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:21:46,991 13708 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.47, Recall  0.08, F1  0.14
+2022-05-09 01:21:46,992 13708 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.55, Recall  0.11, F1  0.18
+2022-05-09 01:21:46,994 13708 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.66, Recall  0.46, F1  0.54
+2022-05-09 01:21:46,995 13708 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.25, Recall  0.77, F1  0.38
+2022-05-09 01:21:46,995 13708 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.2113772831711782
+
+2022-05-09 01:21:47,057 13708 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:21:47,076 13708 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:21:47,081 13708 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:21:47,087 13708 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.42, Recall  0.06, F1  0.10
+2022-05-09 01:21:47,088 13708 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.68, Recall  0.09, F1  0.16
+2022-05-09 01:21:47,090 13708 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.68, Recall  0.47, F1  0.55
+2022-05-09 01:21:47,091 13708 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.26, Recall  0.80, F1  0.40
+2022-05-09 01:21:47,091 13708 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.1900807429099897
+
+2022-05-09 01:22:18,631 22012 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:22:18,716 22012 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:22:19,021 22012 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:22:19,033 22012 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.99, Recall  0.06, F1  0.11
+2022-05-09 01:22:19,036 22012 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.59, Recall  0.35, F1  0.43
+2022-05-09 01:22:19,038 22012 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.71, Recall  0.49, F1  0.58
+2022-05-09 01:22:19,041 22012 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.21, Recall  0.69, F1  0.32
+2022-05-09 01:22:19,041 22012 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.288189761932681
+
+2022-05-09 01:22:19,250 22012 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:22:19,299 22012 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:22:19,321 22012 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:22:19,337 22012 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  0.05, F1  0.10
+2022-05-09 01:22:19,340 22012 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.59, Recall  0.34, F1  0.43
+2022-05-09 01:22:19,344 22012 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.70, Recall  0.49, F1  0.58
+2022-05-09 01:22:19,347 22012 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.21, Recall  0.69, F1  0.32
+2022-05-09 01:22:19,347 22012 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.28379046148977155
+
+2022-05-09 01:22:19,455 22012 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:22:19,479 22012 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:22:19,492 22012 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:22:19,503 22012 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.97, Recall  0.06, F1  0.12
+2022-05-09 01:22:19,507 22012 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.58, Recall  0.36, F1  0.44
+2022-05-09 01:22:19,510 22012 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.71, Recall  0.49, F1  0.58
+2022-05-09 01:22:19,514 22012 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.21, Recall  0.69, F1  0.32
+2022-05-09 01:22:19,514 22012 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.2979003339327503
+
+2022-05-09 01:22:19,581 22012 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:22:19,594 22012 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:22:19,604 22012 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:22:19,637 22012 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.47, Recall  0.08, F1  0.14
+2022-05-09 01:22:19,640 22012 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.55, Recall  0.11, F1  0.18
+2022-05-09 01:22:19,643 22012 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.66, Recall  0.46, F1  0.54
+2022-05-09 01:22:19,647 22012 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.25, Recall  0.77, F1  0.38
+2022-05-09 01:22:19,647 22012 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.2113772831711782
+
+2022-05-09 01:22:19,724 22012 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:22:19,738 22012 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:22:19,749 22012 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:22:19,760 22012 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.42, Recall  0.06, F1  0.10
+2022-05-09 01:22:19,763 22012 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.68, Recall  0.09, F1  0.16
+2022-05-09 01:22:19,766 22012 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.68, Recall  0.47, F1  0.55
+2022-05-09 01:22:19,770 22012 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.26, Recall  0.80, F1  0.40
+2022-05-09 01:22:19,771 22012 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.1900807429099897
+
+2022-05-09 01:24:34,058 21736 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:24:34,118 21736 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:24:34,424 21736 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:24:34,436 21736 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.99, Recall  0.06, F1  0.11
+2022-05-09 01:24:34,438 21736 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.59, Recall  0.35, F1  0.43
+2022-05-09 01:24:34,441 21736 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.71, Recall  0.49, F1  0.58
+2022-05-09 01:24:34,444 21736 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.21, Recall  0.69, F1  0.32
+2022-05-09 01:24:34,444 21736 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.288189761932681
+
+2022-05-09 01:24:34,653 21736 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:24:34,696 21736 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:24:34,718 21736 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:24:34,733 21736 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  0.05, F1  0.10
+2022-05-09 01:24:34,737 21736 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.59, Recall  0.34, F1  0.43
+2022-05-09 01:24:34,740 21736 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.70, Recall  0.49, F1  0.58
+2022-05-09 01:24:34,744 21736 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.21, Recall  0.69, F1  0.32
+2022-05-09 01:24:34,744 21736 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.28379046148977155
+
+2022-05-09 01:24:34,871 21736 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:24:34,896 21736 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:24:34,909 21736 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:24:34,920 21736 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.97, Recall  0.06, F1  0.12
+2022-05-09 01:24:34,924 21736 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.58, Recall  0.36, F1  0.44
+2022-05-09 01:24:34,927 21736 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.71, Recall  0.49, F1  0.58
+2022-05-09 01:24:34,931 21736 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.21, Recall  0.69, F1  0.32
+2022-05-09 01:24:34,931 21736 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.2979003339327503
+
+2022-05-09 01:24:34,996 21736 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:24:35,009 21736 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:24:35,020 21736 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:24:35,030 21736 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.47, Recall  0.08, F1  0.14
+2022-05-09 01:24:35,033 21736 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.55, Recall  0.11, F1  0.18
+2022-05-09 01:24:35,036 21736 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.66, Recall  0.46, F1  0.54
+2022-05-09 01:24:35,040 21736 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.25, Recall  0.77, F1  0.38
+2022-05-09 01:24:35,040 21736 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.2113772831711782
+
+2022-05-09 01:24:35,102 21736 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:24:35,117 21736 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:24:35,128 21736 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:24:35,138 21736 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.78, Recall  0.82, F1  0.80
+2022-05-09 01:24:35,141 21736 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.95, Recall  0.95, F1  0.95
+2022-05-09 01:24:35,144 21736 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 01:24:35,147 21736 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.99, Recall  0.98, F1  0.99
+2022-05-09 01:24:35,148 21736 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.8888422964518373
+
+2022-05-09 01:26:04,455 19524 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:26:04,518 19524 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:26:04,827 19524 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:26:04,839 19524 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 01:26:04,841 19524 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 01:26:04,844 19524 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 01:26:04,846 19524 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 01:26:04,846 19524 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9981160125433628
+
+2022-05-09 01:26:05,054 19524 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:26:05,101 19524 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:26:05,123 19524 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:26:05,138 19524 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 01:26:05,141 19524 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 01:26:05,145 19524 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 01:26:05,148 19524 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  0.99, F1  1.00
+2022-05-09 01:26:05,148 19524 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9982984843600997
+
+2022-05-09 01:26:05,265 19524 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:26:05,289 19524 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:26:05,302 19524 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:26:05,313 19524 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 01:26:05,316 19524 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  1.00, Recall  0.99, F1  0.99
+2022-05-09 01:26:05,320 19524 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 01:26:05,323 19524 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  1.00, Recall  1.00, F1  1.00
+2022-05-09 01:26:05,323 19524 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.9976798170437745
+
+2022-05-09 01:26:05,393 19524 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:26:05,407 19524 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:26:05,418 19524 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:26:05,428 19524 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.00, Recall  0.00, F1  0.00
+2022-05-09 01:26:05,432 19524 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.58, Recall  0.07, F1  0.13
+2022-05-09 01:26:05,435 19524 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.66, Recall  0.45, F1  0.53
+2022-05-09 01:26:05,438 19524 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.23, Recall  0.74, F1  0.35
+2022-05-09 01:26:05,439 19524 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.12767486728052546
+
+2022-05-09 01:26:05,501 19524 xgb_model_v2.py[line:156] - INFO: 开始xgb模型预测
+2022-05-09 01:26:05,517 19524 xgb_model_v2.py[line:158] - INFO: xgb模型预测结束
+2022-05-09 01:26:05,528 19524 xgb_model_v2.py[line:162] - INFO: 测试集评估效果: 
+2022-05-09 01:26:05,538 19524 xgb_model_v2.py[line:95] - INFO: Label 0:   Precision  0.60, Recall  0.02, F1  0.04
+2022-05-09 01:26:05,542 19524 xgb_model_v2.py[line:95] - INFO: Label 1:   Precision  0.63, Recall  0.07, F1  0.12
+2022-05-09 01:26:05,545 19524 xgb_model_v2.py[line:95] - INFO: Label 2:   Precision  0.68, Recall  0.46, F1  0.55
+2022-05-09 01:26:05,549 19524 xgb_model_v2.py[line:95] - INFO: Label 3:   Precision  0.25, Recall  0.79, F1  0.38
+2022-05-09 01:26:05,549 19524 xgb_model_v2.py[line:96] - INFO: macro_f1: 0.14827531248609
+

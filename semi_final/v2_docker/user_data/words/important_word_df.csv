@@ -1,0 +1,281 @@
+word
+memory
+processor
+or
+cpu
+e
+mcerr
+caterr
+ecc
+deassert
+config
+c
+microcontroller/coprocessor
+uncorrectable ecc
+ec
+power supply
+0
+sta
+asserted
+dimm
+0x3b
+device disabled
+fa
+system
+on
+state
+1
+status
+ierr
+uncorrectable
+in
+failure detected
+0x19
+f
+power
+up
+cpu_caterr
+detected
+cpu1
+correctable
+0x7d
+cpu0
+error
+slot
+chassis
+ac
+op
+unknown
+boot
+warm
+enabled
+cpu0_status
+2
+cpu1_status
+to
+ev
+microcontroller
+0xe0
+state asserted
+event
+is
+6
+bios_boo
+configuration
+trip
+bus
+system boot initiated
+os
+no
+reset
+check
+0x13
+4
+memory dimm
+5
+initiated by power up
+8
+0xe2
+temp
+ff
+device
+7
+cpu1b0_dimm_stat
+restart
+temperature cpu
+lt
+memory cpu
+cpu0e0_dimm_stat
+17
+hard reset
+state deasserted
+controller
+controller access degraded or unavailable
+but
+0xf9
+bmc
+cpu1a1_dimm_stat
+0x10
+system event system notice
+off
+9
+ef
+reserved
+0xff
+cpu0b0_dimm_stat
+system acpi power state acpi
+0xfa
+cpu1d1_dimm_stat
+disabled
+lower
+critical
+microcontroller bmc
+fault
+cpu0d0_dimm_stat
+0x8c
+cpu1a0_dimm_stat
+shutdown
+transition to running
+10
+proc_hot
+cpu1d0_dimm_stat
+initiated by hard reset
+present
+system event
+upper
+lower non-critical go
+presence detected
+cpu1_margin_temp
+d0
+0xc5
+c1
+completed
+cpu_pg
+limit
+drive
+initiated
+dis
+ps2_status
+version change
+0x17
+legacy
+30
+c0
+event logging disabled
+degrees
+cpu0c0_dimm_stat
+memory mem
+80
+cpu1_vr_temp
+e1
+57
+cpu0a1_dimm_stat
+27
+slot / connector
+time
+system boot initiated system restart
+3
+0x7c
+drive slot / bay hdd
+ps2
+log
+cpu1e0_dimm_stat
+25
+not
+power state
+clock
+hdd
+chassis_control
+85
+log area reset/cleared
+cpu0a0_dimm_stat
+cpu1c0_dimm_stat
+subsystem
+working
+cpu0d1_dimm_stat
+card
+record
+ac lost
+0x87
+mem_che0_status
+management subsys health
+cpu0_margin_temp
+oem
+cpu0_temp
+psu0_supply
+dimm1
+legacy off state
+12
+psu
+0x16
+by
+fail
+button
+hard
+do
+0x30
+dimm0
+sensor access degraded or unavailable
+button_pressed
+sel
+thermal
+watchdog2
+sel_status
+15
+cpu_core_error
+125
+51
+fpga_pg
+0xb8
+power off/down
+ipmi_watchdog
+temperature moc
+53
+margin
+cpu0b1_dimm_stat
+16
+full
+50
+pwr
+transition
+uncorrectable machine check exception
+fw
+74
+ps1
+ps1_status
+button power button
+oem specific
+threshold
+memory_status
+0xe4
+disk5_stat
+20
+power button pressed
+powerlimiting
+memory device disabled
+down
+105
+critical interrupt
+e9
+24
+68
+fp
+fault status
+70
+supply
+106
+time_stamp_sync
+dimm120_stat
+0203c0a80101
+0x80
+bios
+cpu0f0_dimm_stat
+management controller unavailable
+f1
+sensor failure
+drop
+temp_dimm_klm
+power_drop
+os critical stop
+os boot
+system_health
+124
+dimm130
+ib_card_stat
+lost
+86
+cycle
+0xfe
+lower critical go
+0600c0a80101
+dimm001
+going
+49
+reached
+acpi
+connector
+ipmi
+0x8f
+disk8
+cpu0e1_dimm_stat
+0xe9

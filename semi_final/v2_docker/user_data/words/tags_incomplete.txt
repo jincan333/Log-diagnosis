@@ -1,0 +1,507 @@
+asserted
+asserted power supply
+asserted power supply ps1/2 status
+asserted add-in card riser2 card
+asserted battery
+asserted boot error boot error
+asserted button
+asserted button button_pressed
+asserted button buttonmm ev
+asserted button power button
+asserted button uid button
+asserted chassis
+asserted chip set pch status
+asserted critical interrupt
+asserted critical interrupt pcie
+asserted critical interrupt pcie error
+asserted critical interrupt pcie status
+asserted device in block list
+asserted drive slot
+asserted drive slot / bay
+asserted drive slot / bay bp hdd%d status
+asserted drive slot / bay disk
+asserted drive slot / bay disk stat
+asserted drive slot / bay front status
+asserted drive slot / bay hdd
+asserted drive slot / bay hdd status
+asserted drive slot / bay mb_sdd
+asserted drive slot / bay nvme stat
+asserted drive slot / bay nvme status
+asserted drive slot / bay nvmessd
+asserted drive slot / bay rear status
+asserted event logging disabled
+asserted fa
+asserted fan
+asserted lan link up
+asserted management subsys health
+asserted management subsystem health
+asserted memory
+asserted memory cpu
+asserted memory dimm
+asserted memory dimm stat
+asserted memory dimm status
+asserted memory mem
+asserted memory memory error
+asserted memory memory status
+asserted microcontroller
+asserted microcontroller bmc
+asserted microcontroller/coprocessor
+asserted oem cpu0
+asserted oem record
+asserted os boot
+asserted os boot bios boot
+asserted os critical stop
+asserted os stop/shutdown
+asserted physical security areaintrusion
+asserted power supply
+asserted power unit
+asserted processor
+asserted processor cpu
+asserted processor proc hot
+asserted reserved
+asserted slot / connector
+asserted slot/connector eth
+asserted slot/connector ib_card_stat
+asserted slot/connector pcie
+asserted slot/connector nic
+asserted slot/connector port
+asserted slot/connector ps2 fan status
+asserted system acpi power state
+asserted system acpi power state acpi
+asserted system acpi power state power status
+asserted system boot initiated
+asserted system boot initiated bios boot up
+asserted system boot initiated sysrestart
+asserted system boot initiated system res
+asserted system boot initiated system restart
+asserted system event
+asserted system event sys event
+asserted system event system error
+asserted system event system notice
+asserted system event time stamp sync
+asserted system firmware error
+asserted system firmware error bios
+asserted system firmware error bios poststatus
+asserted system firmware error bios post status
+asserted system firmware error post error
+asserted system firmware error system progress
+asserted system firmwares
+asserted system firmwares bios
+asserted system firmwares bios_poststatus
+asserted system firmwares system progress
+asserted temperature
+asserted temperature cpu
+asserted temperature cpu margin
+asserted temperature cpu temp
+asserted temperature cpu temp
+asserted temperature dimmg
+asserted temperature fpga
+asserted temperature inlet
+asserted temperature mb thermal trip
+asserted temperature melx 
+asserted temperature moc
+asserted temperature nic
+asserted temperature nvme
+asserted temperature oem ps
+asserted terminator lcd presence
+asserted unknown
+asserted unknown bmc
+asserted unknown chassis control
+asserted unknown cpu caterr
+asserted unknown cpu dimm hot
+asserted unknown cpu mcerr
+asserted unknown cpu prochot
+asserted unknown sps fw health
+asserted version change
+asserted watchdog ipmi watchdog
+
+deassert
+deasserted
+deasserted power supply
+deasserted power supply ps1/2 status
+deasserted add-in card riser2 card
+deasserted battery
+deasserted boot error boot error
+deasserted button
+deasserted button button_pressed
+deasserted button buttonmm ev
+deasserted button power button
+deasserted button uid button
+deasserted chassis
+deasserted chip set pch status
+deasserted critical interrupt
+deasserted critical interrupt pcie
+deasserted critical interrupt pcie error
+deasserted critical interrupt pcie status
+deasserted device in block list
+deasserted drive slot
+deasserted drive slot / bay
+deasserted drive slot / bay bp hdd%d status
+deasserted drive slot / bay disk
+deasserted drive slot / bay disk stat
+deasserted drive slot / bay front status
+deasserted drive slot / bay hdd
+deasserted drive slot / bay hdd status
+deasserted drive slot / bay mb_sdd
+deasserted drive slot / bay nvme stat
+deasserted drive slot / bay nvme status
+deasserted drive slot / bay nvmessd
+deasserted drive slot / bay rear status
+deasserted event logging disabled
+deasserted fa
+deasserted fan
+deasserted lan link up
+deasserted management subsys health
+deasserted management subsystem health
+deasserted memory
+deasserted memory cpu
+deasserted memory dimm
+deasserted memory dimm stat
+deasserted memory dimm status
+deasserted memory mem
+deasserted memory memory error
+deasserted memory memory status
+deasserted microcontroller
+deasserted microcontroller bmc
+deasserted microcontroller/coprocessor
+deasserted oem cpu0
+deasserted oem record
+deasserted os boot
+deasserted os boot bios boot
+deasserted os critical stop
+deasserted os stop/shutdown
+deasserted physical security areaintrusion
+deasserted power supply
+deasserted power unit
+deasserted processor
+deasserted processor cpu
+deasserted processor proc hot
+deasserted reserved
+deasserted slot / connector
+deasserted slot/connector eth
+deasserted slot/connector ib_card_stat
+deasserted slot/connector pcie
+deasserted slot/connector nic
+deasserted slot/connector port
+deasserted slot/connector ps2 fan status
+deasserted system acpi power state
+deasserted system acpi power state acpi
+deasserted system acpi power state power status
+deasserted system boot initiated
+deasserted system boot initiated bios boot up
+deasserted system boot initiated sysrestart
+deasserted system boot initiated system res
+deasserted system boot initiated system restart
+deasserted system event
+deasserted system event sys event
+deasserted system event system error
+deasserted system event system notice
+deasserted system event time stamp sync
+deasserted system firmware error
+deasserted system firmware error bios
+deasserted system firmware error bios poststatus
+deasserted system firmware error bios post status
+deasserted system firmware error post error
+deasserted system firmware error system progress
+deasserted system firmwares
+deasserted system firmwares bios
+deasserted system firmwares bios_poststatus
+deasserted system firmwares system progress
+deasserted temperature
+deasserted temperature cpu
+deasserted temperature cpu margin
+deasserted temperature cpu temp
+deasserted temperature cpu temp
+deasserted temperature dimmg
+deasserted temperature fpga
+deasserted temperature inlet
+deasserted temperature mb thermal trip
+deasserted temperature melx 
+deasserted temperature moc
+deasserted temperature nic
+deasserted temperature nvme
+deasserted temperature oem ps
+deasserted terminator lcd presence
+deasserted unknown
+deasserted unknown bmc
+deasserted unknown chassis control
+deasserted unknown cpu caterr
+deasserted unknown cpu dimm hot
+deasserted unknown cpu mcerr
+deasserted unknown cpu prochot
+deasserted unknown sps fw health
+deasserted version change
+deasserted watchdog ipmi watchdog
+
+state asserted
+state deasserted
+
+ac lost
+ac lost or out-of-range
+add-in card
+add-in card raid presence
+add-in card riser card
+power supply
+power supply ps status
+add-in card riser card
+battery
+boot error boot error
+button
+button button pressed
+button buttonmm ev
+button power button
+button uid button
+cable/interconnect
+chassis
+chip set pch status
+config error
+configuration error
+controller access degraded or unavailable
+correctable ecc
+correctable machine check error
+correctable memory error logging disabled
+cpu dimm
+cpu dimm memory
+cpu dimm processor
+cpu dimm unknown
+cpu dimm unknown chassis control
+critical interrupt
+critical interrupt pcie
+critical interrupt pcie error
+critical interrupt pcie status
+device in block list
+device absent
+device absent power supply
+device absent slot/connector
+device absent terminator lcd presence
+device disabled
+device enabled
+device enabled microcontroller/coprocessor bmc boot up
+device enabled os boot
+device enabled power supply
+device enabled power unit
+device enabled system boot initiated
+device present
+device present add-in card
+device present add-in card riser
+device present button
+device present drive slot
+device present button power button
+device present button button pressed
+device present power supply
+device present power unit
+device present processor
+device present processor cpu
+device present system acpi power state acpi pwr status
+diagnostic boot completed
+drive fault
+drive present
+drive slot
+drive slot / bay
+drive slot / bay bp hdd status
+drive slot / bay disk
+drive slot / bay disk stat
+drive slot / bay front status
+drive slot / bay hdd
+drive slot / bay hdd status
+drive slot / bay mb sdd
+drive slot / bay nvme stat
+drive slot / bay nvme status
+drive slot / bay nvmessd
+drive slot / bay rear status
+event logging disabled
+event logging disabled event log
+event logging disabled sel fullness
+event logging disabled sel status
+failure detected
+fa
+fan fan rpm
+fault status
+frb/bist failure
+frb/hang in post failure
+fru failure
+fully redundant
+general chassis intrusion
+hard reset
+hardware change detected
+hot spare
+identify status
+ierr
+informational
+informational memory
+informational system event system notice
+initiated by hard reset
+initiated by power up
+initiated by warm reset
+lan link up
+legacy off state
+legacy on state
+log almost full
+log area reset/cleared
+low
+lower critical go
+lower non-critical go
+management controller off-line
+management controller unavailable
+management subsys health
+management subsystem health
+memory
+memory cpu
+memory dimm
+memory cpu dimm stat
+memory dimm stat
+memory dimm status
+memory mem
+memory mem ab hot
+memory mem status
+memory memory error
+memory memory status
+memory device disabled
+microcontroller
+microcontroller bmc
+microcontroller/coprocessor
+nmi/diag interrupt
+no bootable media
+no system memory installed
+no usable system memory
+oem
+oem cpu caterr
+oem cpu mcerr
+oem cpu prochot
+oem record
+oem specific
+os boot
+os boot bios boot
+os critical stop
+os graceful shutdown
+os stop/shutdown os status
+os stop/shutdown
+parity
+pci serr
+performance met
+physical security areaintrusion
+power button pressed
+power cycle
+power off/down
+power supply
+power supply ac lost
+power supply cpu pg
+power supply cpu pgs
+power supply fpga pg
+power supply power supply
+power supply power drop
+power supply power drop stat
+power supply power limiting
+power supply powerlimiting
+power supply ps status
+power unit
+power unit pwr unit status
+predictive failure
+presence detected
+power state
+power state system acpi power state
+processor cpu caterr
+processor cpu core error
+processor cpu status
+processor cpu prochot
+processor cpu proc hot
+processor
+processor proc hot
+reading ; threshold degrees c temperature cpu margin temp
+reading ; threshold degrees c temperature dimmg temp
+reading ; threshold degrees c
+reading ; threshold rpm fan
+reading fan
+reading microcontroller
+reading temperature
+reading processor
+reading power supply
+rebuild aborted
+rebuild in progress
+redundancy lost
+removable boot media not found
+reserved
+reset button pressed
+sensor access degraded or unavailable
+sensor failure
+session audit
+slot / connector
+slot is disabled
+slot/connector eth
+slot/connector ib card stat
+slot/connector pcie
+slot/connector nic
+slot/connector port
+slot/connector ps fan status
+spare
+system acpi power state
+system acpi power state acpi
+system acpi power state power status
+system boot initiated
+system boot initiated bios boot up
+system boot initiated sysrestart
+system boot initiated system res
+system boot initiated system restart
+system event
+system event sys event
+system event system error
+system event system notice
+system event time stamp sync
+system restart
+system firmware error
+system firmware error bios
+system firmware error bios poststatus
+system firmware error post error
+system firmware error system progress
+system firmwares
+system firmwares bios
+system firmwares bios poststatus
+system firmwares system progress
+temperature
+temperature cpu
+temperature cpu margin
+temperature cpu temp
+temperature cpu temp
+temperature dimmg
+temperature fpga
+temperature inlet
+temperature mb thermal trip
+temperature melx 
+temperature moc
+temperature nic
+temperature nvme
+temperature oem_ps
+thermal trip
+throttled
+timer expired
+timer interrupt
+timestamp clock sync
+transition to power off
+transition to power off microcontroller/coproccessor
+transition to running
+transition to running oem
+transition to running os boot
+transition to running processor
+transition to running slot / connector
+transition to running system acpi power state
+transition to running system boot initiated
+terminator lcd presence
+uncorrectable ecc
+uncorrectable machine check exception
+undetermined system hardware failure
+unknown
+unknown bmc
+unknown bmc fw info
+unknown chassis control
+unknown cpu caterr
+unknown cpu dimm hot
+unknown cpu mcerr
+unknown cpu prochot
+unknown error
+unknown sps fw health
+unrecoverable ide device failure
+unspecified
+upper
+version change
+watchdog ipmi watchdog
+
