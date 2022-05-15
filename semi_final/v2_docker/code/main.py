@@ -13,7 +13,6 @@ import traceback
 import re
 import random
 
-
 ## 日志格式设置
 # 日志级别关系映射
 level_relations = {
@@ -23,6 +22,8 @@ level_relations = {
     'error': logging.ERROR,
     'crit': logging.CRITICAL
 }
+
+
 def get_logger(filename, level='info'):
     # 创建日志对象
     log = logging.getLogger(filename)
@@ -43,6 +44,7 @@ def get_logger(filename, level='info'):
         log.addHandler(console_handler)
         log.addHandler(file_handler)
     return log
+
 
 # sn分组后，本次报错和上次报错之间的日志匹配到本次报错
 def divideLogByFaultTime(log_label_df: pd.DataFrame):
@@ -77,6 +79,68 @@ def divideLogByFaultTime(log_label_df: pd.DataFrame):
                         msg_df['fault_time'] = temp_log[temp_log['label'] != '']['time'].iloc[0]
                         log_correspond_label_df = pd.concat([log_correspond_label_df, msg_df])
     return log_correspond_label_df, no_label_log_list
+
+
+# sn分组后，按照最近邻+时间间隔划分日志数据
+def divideLogByNearestTime(log_label_df: pd.DataFrame):
+    log_correspond_label_df = pd.DataFrame(columns=['sn', 'fault_time', 'msg', 'time', 'server_model', 'label'])
+    origin_label_df = log_label_df[log_label_df['fault_time'] != '']
+    no_label_log_list = []
+    cutoff = 10 * 3600
+
+    for sn, log in log_label_df.groupby('sn'):
+        if len(log[log['label'] != '']) == 0:
+            no_label_log_list.append(log)
+        elif len(log[log['label'] != '']) == 1:
+            msg_df = log[log['label'] == '']
+            if len(msg_df) > 0:
+                msg_df['label'] = log[log['label'] != '']['label'].iloc[0]
+                msg_df['fault_time'] = log[log['label'] != '']['time'].iloc[0]
+                log_correspond_label_df = pd.concat([log_correspond_label_df, msg_df])
+        else:
+            lable_df = log[log['label'] != '']
+            msg_df = log[log['label'] == '']
+            for msg_item in msg_df.iterrows():
+                previous_delta_time = 1000 * 24 * 3600
+                for lable_item in lable_df.iterrows():
+                    now_delta_time = abs(datetime.strptime(lable_item[1]['time'], '%Y-%m-%d %H:%M:%S'
+                                                           ) - datetime.strptime(msg_item[1]['time'],
+                                                                                 '%Y-%m-%d %H:%M:%S'))
+                    if now_delta_time.days * 24 * 3600 + now_delta_time.seconds < previous_delta_time:
+                        previous_delta_time = now_delta_time.days * 24 * 3600 + now_delta_time.seconds
+                        final_lable = lable_item[1]
+                        if previous_delta_time < cutoff:
+                            msg_item[1]['fault_time'] = lable_item[1]['time']
+                            msg_item[1]['label'] = lable_item[1]['label']
+            log_correspond_label_df = pd.concat([log_correspond_label_df, msg_df])
+    log_correspond_label_df = log_correspond_label_df[log_correspond_label_df['label'] != '']
+    # 找出没有匹配到日志的标签并将其添加到 日志标签映射表 中
+    temp_df = pd.concat([log_correspond_label_df, origin_label_df])
+    sn_list = []
+    fault_time_list = []
+    msg_list = []
+    time_list = []
+    server_model_list = []
+    label_list = []
+    for g in temp_df.groupby(['sn', 'fault_time', 'label']):
+        if len(g[1]) == 1:
+            sn_list.append(g[0][0])
+            fault_time_list.append(g[0][1])
+            msg_list.append('')
+            time_list.append(g[1]['time'].iloc[0])
+            server_model_list.append(g[1]['server_model'].iloc[0])
+            label_list.append(g[0][2])
+    no_log_label_df = pd.DataFrame({
+        'sn': sn_list,
+        'fault_time': fault_time_list,
+        'msg': msg_list,
+        'time': time_list,
+        'server_model': server_model_list,
+        'label': label_list
+    })
+    log_correspond_label_df = pd.concat([log_correspond_label_df, no_log_label_df])
+    return log_correspond_label_df, no_label_log_list
+
 
 # 计算统计特征
 def calculateStatisticFeature(log_correspond_label_df: pd.DataFrame) -> pd.DataFrame:
@@ -227,6 +291,7 @@ def calculateStatisticFeature(log_correspond_label_df: pd.DataFrame) -> pd.DataF
     )
     return msg_log_label_df
 
+
 # 计算特征函数
 def caculateFeature(log_df: pd.DataFrame, label_df: pd.DataFrame, word_list: list) -> pd.DataFrame:
     warnings.filterwarnings("ignore")
@@ -235,26 +300,37 @@ def caculateFeature(log_df: pd.DataFrame, label_df: pd.DataFrame, word_list: lis
 
     logger.info('开始拼接日志和标签数据')
     log_df['label'] = ''
+    log_df['fault_time'] = ''
+    log_df = log_df[['sn', 'fault_time', 'msg', 'time', 'server_model', 'label']]
+
     label_df['time'] = label_df['fault_time']
     label_df['msg'] = ''
     label_df['server_model'] = label_df['sn'].map(dict(zip(log_df['sn'], log_df['server_model'])))
-    label_df = label_df[['sn', 'time', 'msg', 'server_model', 'label']]
+    label_df = label_df[['sn', 'fault_time', 'msg', 'time', 'server_model', 'label']]
     log_label_df = pd.concat([log_df, label_df], axis=0).sort_values(by='time')
-    log_label_df['fault_time'] = ''
+    #     log_label_df['fault_time'] = ''
     log_label_df = log_label_df[['sn', 'fault_time', 'msg', 'time', 'server_model', 'label']]
     logger.info('拼接日志和标签数据结束')
 
     logger.info('开始匹配日志和标签')
     logger.info('使用报错时间截断进行划分')
     # 使用报错时间截断进行划分
-    FaultTime_log_correspond_label_df, FaultTime_no_label_log_list = divideLogByFaultTime(log_label_df)
-    # FaultTime_log_correspond_label_df.to_csv('./user_data/tmp_data/FaultTime_log_correspond_label_df.csv', index = None)
-    # FaultTime_log_correspond_label_df = pd.read_csv('./user_data/tmp_data/FaultTime_log_correspond_label_df.csv')
+    #     NearestTime_log_correspond_label_df, NearestTime_no_label_log_list = divideLogByNearestTime(log_label_df)
+    #     NearestTime_log_correspond_label_df.to_csv('./user_data/tmp_data/NearestTime_log_correspond_label_df.csv', index = None)
+    NearestTime_log_correspond_label_df = pd.read_csv('./user_data/tmp_data/NearestTime_log_correspond_label_df.csv')
+    #     FaultTime_log_correspond_label_df, FaultTime_no_label_log_list = divideLogByFaultTime(log_label_df)
+    #     FaultTime_log_correspond_label_df.to_csv('./user_data/tmp_data/FaultTime_log_correspond_label_df.csv', index = None)
+    FaultTime_log_correspond_label_df = pd.read_csv('./user_data/tmp_data/FaultTime_log_correspond_label_df.csv')
+
+    NearestTime_log_correspond_label_df = NearestTime_log_correspond_label_df[
+        NearestTime_log_correspond_label_df['msg'].notna()]
+    FaultTime_log_correspond_label_df = FaultTime_log_correspond_label_df[
+        FaultTime_log_correspond_label_df['msg'].notna()]
     logger.info('匹配日志和标签结束')
 
     logger.info('开始计算统计特征')
     # 使用报错时间截断进行划分
-    msg_log_label_df = calculateStatisticFeature(FaultTime_log_correspond_label_df)
+    msg_log_label_df = calculateStatisticFeature(NearestTime_log_correspond_label_df)
     logger.info('计算统计特征结束')
 
     msg_log_list = list(msg_log_label_df['msg_log'])
@@ -283,7 +359,7 @@ def caculateFeature(log_df: pd.DataFrame, label_df: pd.DataFrame, word_list: lis
     feature_df['label'] = label_list
     feature_df[['sn', 'fault_time']] = msg_log_label_df[['sn', 'fault_time']]
     logger.info('最后3列为: label, sn, fault_time, 其余列均为特征')
-    logger.info('数据条数: {}, 特征个数: {}'.format(feature_df.shape[0], feature_df.shape[1]-3))
+    logger.info('数据条数: {}, 特征个数: {}'.format(feature_df.shape[0], feature_df.shape[1] - 3))
     return feature_df
 
 
@@ -307,6 +383,7 @@ xgb_params = {
     # 'eval_metric':'auc'
 }
 
+
 # 指标评估
 def macro_f1(label_df: pd.DataFrame, prediction_df: pd.DataFrame) -> float:
     """
@@ -320,7 +397,7 @@ def macro_f1(label_df: pd.DataFrame, prediction_df: pd.DataFrame) -> float:
     logger_error = get_logger('./user_data/logs/{}_error.log'.format(date.today()), 'error')
 
     prediction_df.columns = ['sn', 'fault_time', 'prediction']
-    outcome_df = pd.merge(label_df, prediction_df ,how = 'left', on = ['sn', 'fault_time'])
+    outcome_df = pd.merge(label_df, prediction_df, how='left', on=['sn', 'fault_time'])
     weights = [5 / 11, 4 / 11, 1 / 11, 1 / 11]
     macro_F1 = 0.
     for i in range(len(weights)):
@@ -335,6 +412,7 @@ def macro_f1(label_df: pd.DataFrame, prediction_df: pd.DataFrame) -> float:
     logger.info('macro_f1: {}\n'.format(macro_F1))
 
     return macro_F1
+
 
 # 模型训练函数
 def xgbTrain(feature_df: pd.DataFrame) -> xgb.XGBModel:
@@ -364,8 +442,9 @@ def xgbTrain(feature_df: pd.DataFrame) -> xgb.XGBModel:
 
     return xgb_model
 
+
 # xgb模型预测函数
-def xgbPredict(model: xgb.XGBModel, feature_df: pd.DataFrame, label_df = None) -> pd.DataFrame:
+def xgbPredict(model: xgb.XGBModel, feature_df: pd.DataFrame, label_df=None) -> pd.DataFrame:
     '''
         feature_df: 要求最后3列为: label, sn, fault_time, 其余列均为特征
     '''
@@ -404,11 +483,11 @@ def xgbPredict(model: xgb.XGBModel, feature_df: pd.DataFrame, label_df = None) -
 
 
 # xgb模型随机训练并投票预测
-def xgbRandomTrainPredict(train_feature_df: pd.DataFrame, test_feature_df: pd.DataFrame, label_df = None) -> pd.DataFrame:
+def xgbRandomTrainPredict(train_feature_df: pd.DataFrame, test_feature_df: pd.DataFrame, label_df=None) -> pd.DataFrame:
     ## 每个子模型样本均衡，利用投票规则生成最终预测
     random.seed(0)
-    N = 100 # number of the models
-    num_sample = 500 # number of samples for each label
+    N = 50  # number of the models
+    num_sample = 700  # number of samples for each label
 
     _label0_index_list = list(train_feature_df[train_feature_df['label'] == 0].index)
     _label1_index_list = list(train_feature_df[train_feature_df['label'] == 1].index)
@@ -425,12 +504,11 @@ def xgbRandomTrainPredict(train_feature_df: pd.DataFrame, test_feature_df: pd.Da
         idx_2 = random.sample(_label2_index_list, num_sample)
         idx_3 = random.sample(_label3_index_list, num_sample)
         idx = np.hstack((idx_0, idx_1, idx_2, idx_3))
-#         idx = idx_0 + idx_1 + idx_2 + idx_3
         random.shuffle(idx)
         sub_train_feature_df = train_feature_df.loc[idx, :]
         sub_train_feature = np.array(sub_train_feature_df[feature_name_list])
         sub_train_label = np.array(sub_train_feature_df['label'])
-        sub_train_data = xgb.DMatrix(sub_train_feature,label = sub_train_label)
+        sub_train_data = xgb.DMatrix(sub_train_feature, label=sub_train_label)
 
         logger.info('开始第{}轮训练和预测'.format(iter))
         sub_xgb_model = xgb.train(xgb_params, sub_train_data, num_boost_round=500)
@@ -453,15 +531,6 @@ def xgbRandomTrainPredict(train_feature_df: pd.DataFrame, test_feature_df: pd.Da
 
 
 
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     os.chdir(os.path.dirname(sys.path[0]))
     # 忽略warning
@@ -469,85 +538,35 @@ if __name__ == '__main__':
     logger = get_logger('./user_data/logs/{}_info.log'.format(date.today()), 'info')
     logger_error = get_logger('./user_data/logs/{}_error.log'.format(date.today()), 'error')
 
-    final_log_a = pd.read_csv('./tcdata/final_sel_log_dataset_a.csv')
-    final_label_a = pd.read_csv('./tcdata/final_submit_dataset_a.csv')
-    final_label_a['label'] = -1
+    # A榜
+    # final_log_a = pd.read_csv('./tcdata/final_sel_log_dataset_a.csv')
+    # final_label_a = pd.read_csv('./tcdata/final_submit_dataset_a.csv')
+    # final_label_a['label'] = -1
+    # important_word_list = list(pd.read_csv('./user_data/words/important_word_df.csv')['word'])
+    # word_list = list(set(important_word_list))
+    # final_a_feature_df = caculateFeature(final_log_a, final_label_a, word_list)
+    # train_feature_df = pd.read_csv('./user_data/feature_data/train_feature_v2p1_df.csv')
+    # final_a_feature_df = final_a_feature_df[list(train_feature_df)]
+    # final_a_feature_df.to_csv('./user_data/feature_data/final_a_feature_df.csv', index=None)
+    # model = xgb.Booster()
+    # model.load_model('./user_data/model_data/xgb_model_v2p1.json')
+    # final_prediction_df = xgbPredict(model, final_a_feature_df)
+    # final_prediction_df.to_csv('./prediction_result/predictions.csv',index=None)
+
+    # B榜
+    final_log_b = pd.read_csv('./tcdata/final_sel_log_dataset_b.csv')
+    final_label_b = pd.read_csv('./tcdata/final_submit_dataset_b.csv')
+    final_label_b['label'] = -1
     important_word_list = list(pd.read_csv('./user_data/words/important_word_df.csv')['word'])
     word_list = list(set(important_word_list))
-    final_a_feature_df = caculateFeature(final_log_a, final_label_a, word_list)
+    final_b_feature_df = caculateFeature(final_log_b, final_label_b, word_list)
     train_feature_df = pd.read_csv('./user_data/feature_data/train_feature_v2p1_df.csv')
-    final_a_feature_df = final_a_feature_df[list(train_feature_df)]
-    final_a_feature_df.to_csv('./user_data/feature_data/final_a_feature_df.csv', index=None)
+    final_b_feature_df = final_b_feature_df[list(train_feature_df)]
+    final_b_feature_df.to_csv('./user_data/feature_data/final_b_feature_df.csv', index=None)
     model = xgb.Booster()
     model.load_model('./user_data/model_data/xgb_model_v2p1.json')
-    final_prediction_df = xgbPredict(model, final_a_feature_df)
+    final_prediction_df = xgbPredict(model, final_b_feature_df)
     final_prediction_df.to_csv('./prediction_result/predictions.csv',index=None)
-
-    # # 读取数据
-    # # 读取sel日志数据
-    # sel_log_df = pd.read_csv('./data/preliminary_sel_log_dataset.csv').drop_duplicates()
-    # # 读取训练标签数据：有重复数据！
-    # train_label1 = pd.read_csv('./data/preliminary_train_label_dataset.csv')
-    # train_label2 = pd.read_csv('./data/preliminary_train_label_dataset_s.csv')
-    # train_label_df = pd.concat([train_label1,train_label2],axis=0).drop_duplicates()
-    # # 读取初赛A榜测试集
-    # preliminary_sel_log_dataset_a = pd.read_csv('./data/preliminary_sel_log_dataset_a.csv')
-    # preliminary_submit_dataset_a = pd.read_csv('./data/preliminary_submit_dataset_a.csv')
-    # preliminary_submit_dataset_a['label'] = -1
-    # # 读取初赛B榜测试集
-    # preliminary_sel_log_dataset_b = pd.read_csv('./data/preliminary_sel_log_dataset_b.csv')
-    # preliminary_submit_dataset_b = pd.read_csv('./data/preliminary_submit_dataset_b.csv')
-    # preliminary_submit_dataset_b['label'] = -1
-    # # preliminary_submit_dataset_b_v1p8 = pd.read_csv('./user_data/tmp_data/preliminary_submit_dataset_b_v1p8.csv')
-    # # 读取词列表
-    # v1_word_list = list(pd.read_csv('./user_data/words/word_frequency_df.txt',sep='\t')['word'])
-    # v1p1_word_list = list(pd.read_csv('./user_data/words/tags_incomplete.txt',sep='\t',names=['word'])['word'])
-    # word_list = list(set(v1_word_list+v1p1_word_list))
-    # important_word_list = list(pd.read_csv('./user_data/words/important_word_df.csv')['word'])
-    # word_list = important_word_list
-
-    # 获取特征
-    # 计算特征
-    # train_feature_df = caculateFeature(sel_log_df, train_label_df, word_list)
-    # train_feature_df.to_csv('./user_data/feature_data/train_feature_v2p1_df.csv', index=None)
-    # random.seed(0)
-    # val_mask = [random.random() < 0.3 for _ in range(len(train_feature_df))]
-    # train_mask = [not xx for xx in val_mask]
-    # temp_feature_df = train_feature_df[train_mask]
-    # val_feature_df = train_feature_df[val_mask]
-    # temp_feature_df.to_csv('./user_data/feature_data/temp_feature_df.csv', index=None)
-    # val_feature_df.to_csv('./user_data/feature_data/val_feature_df.csv', index=None)
-    # 读取特征
-    # train_feature_df = pd.read_csv('./user_data/feature_data/train_feature_df.csv')
-    # a_feature_df = pd.read_csv('./user_data/feature_data/a_feature_df.csv')
-    # b_feature_df = pd.read_csv('./user_data/feature_data/b_feature_df.csv')
-    # random.seed(0)
-    # val_mask = [random.random() < 0.3 for _ in range(len(train_feature_df))]
-    # train_mask = [not xx for xx in val_mask]
-    # temp_feature_df = train_feature_df[train_mask]
-    # val_feature_df = train_feature_df[val_mask]
-
-    # xgb训练预测
-    # predictions = xgbRandomTrainPredict(temp_feature_df, val_feature_df, val_feature_df[['sn', 'fault_time', 'label']])
-
-    # xgb训练
-    # model = xgbTrain(train_feature_df)
-    # model.save_model('./user_data/model_data/xgb_model_v2p1.json')
-    # model_temp = xgbTrain(temp_feature_df)
-    # model_temp.save_model('./user_data/model_data/temp_xgb_model_v2.json')
-    # xgb预测
-    # 读取模型文件
-    # model = xgb.Booster()
-    # model.load_model('./user_data/model_data/xgb_model_v2.json')
-    # # model.load_model('./user_data/model_data/temp_xgb_model_v2.json')
-    # # 预测
-    # train_prediction_df = xgbPredict(model, train_feature_df, train_feature_df[['sn', 'fault_time', 'label']])
-    # train_prediction_df.to_csv('./prediction_result/train_prediction_df.csv',index=None)
-    # temp_prediction_df = xgbPredict(model, temp_feature_df, temp_feature_df[['sn', 'fault_time', 'label']])
-    # temp_prediction_df.to_csv('./prediction_result/temp_prediction_df.csv',index=None)
-    # val_prediction_df = xgbPredict(model, val_feature_df, val_feature_df[['sn', 'fault_time', 'label']])
-    # val_prediction_df.to_csv('./prediction_result/val_prediction_df.csv',index=None)
-
 
 
 
